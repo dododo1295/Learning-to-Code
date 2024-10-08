@@ -1,3 +1,3 @@
 # Learning-to-Code
-<h1>Push Command</p>
-<p>git push -u origin main</p>
+###Push Command###
+git push -u origin main

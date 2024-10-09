@@ -43,3 +43,4 @@ h1 {
   background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
   box-shadow: 0 0 20px 0 hsla(223, 59%, 31%, 0.8)
 }
+/* remember linear-gradient attributes need 3 colors or they don't work, you can use HSL, RGB, or Hex Codes for colors and they will all work */

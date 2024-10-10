@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World Survey</title>
+    <link rel="styles.css" href="stylesheet"/>
+  </head>
+    <h1 id="title">Welcome to my survey</h1>
+    <p id="description">this little shindig is for my freeCodeCamp certification, so I hope you're ready to give me personal information!</p>
+    <form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+        <fieldset>
+            <label id="name-label">What's your name? <input type="text" id="name" name="name-label" required placeholder="Pablo"></label>
+            <label id="email-label">Enter your email too!<input type="email" id="email" name="email-label" required placeholder="pablo@escobar.com"></label>
+            <label id="number-label">What's your age?<input type="number" min="0" max="120" id="number" name="number-label" placeholder="44"/></label>
+        </fieldset>
+        <fieldset>
+            <legend>What's your favourite music genre?</legend>
+            <label for="jazz"><input type="radio" class="inline" name="genre" id="jazz" value="j" checked> Jazz </label>
+            <label for="rock"><input type="radio" class="inline" name="genre" id="rock" value="r"> Rock </label>
+            <label for="house"><input type="radio" class="inline" name="genre" id="house" value="h"> House </label>
+            <label for="rnb"><input type="radio" class="inline" name="genre" id="rnb" value="rb"> R&B </label>
+        </fieldset>
+        <fieldset>
+            <label> What was Pablo's favourite drink?   
+                <select id="dropdown">
+                    <option value="">(select one, it's required...)</option>
+                    <option value="1">Coca-cola</option>
+                    <option value="2">Pepsi</option>
+                    <option value="3">Sprite</option>
+                </select>
+        </fieldset> 
+            <legend> How would you describe yourself? </legend>
+            <label for="super"><input class="inline" type="checkbox" id="super" name="enjoyment" value="amazing"> Amazing</label>
+            <label for="kinda"><input class="inline" type="checkbox" id="kinda" name="enjoyment" value="kind"/>Kind</label>
+            <label for="boring"><input class="inline" type="checkbox" id="boring" name="enjoyment" value="loving"/> Loving</label>
+            <label for="stupid"><input class="inline" type="checkbox" id="stupid" name="enjoyment" value="hateful"/> Hateful</label>
+             <h4>Anything else you want to say about yourself?</h4>
+            <textarea rows="3" cols="30" placeholder="yeah i'm so cool bro i can like do backflips and stuff."></textarea>
+        <input type="submit" id="submit" value="Submit"/>
+    </form>
+  <body>
+  </body>
+</html>

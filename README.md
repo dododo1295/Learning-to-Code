@@ -25,4 +25,4 @@ Or if i'd rather maintain a specific aspect ratio like a square use code that lo
     object-fit: cover;
 }
 ```
-and **this** will change things for how I can create a photo gallery on my personal website project.
+and **this** will change things for how I can create a photo gallery on my personal website project. also let's not forget the ```gap ``` property that can help seperate the images from each other. wow, this is sick.

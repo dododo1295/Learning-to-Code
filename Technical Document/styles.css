@@ -1,0 +1,42 @@
+header {
+    border: 1px solid black;
+    text-align: left;
+}
+#navbar {
+    border: 1px solid black;
+    background-color: black;
+
+}
+#navbar:hover {
+    background-color: rgb(219, 177, 39);
+}
+
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;    
+}
+.navbar {
+    color: white;
+}
+.navbar:hover {
+    background-color: #232831;
+}
+img {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    border: 1px solid black;
+    box-shadow: 1px 1px 5px black;
+    margin-bottom: 17px;
+}
+section {
+    border: 1px solid black;
+}
+.disclaimer {
+    font-size: small;
+}

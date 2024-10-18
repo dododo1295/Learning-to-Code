@@ -23,7 +23,7 @@ header {
 .navbar:hover {
     background-color: #232831;
 }
-img {
+#macbook-img {
     width: 50%;
     height: auto;
     display: block;
@@ -33,6 +33,7 @@ img {
     border: 1px solid black;
     box-shadow: 1px 1px 5px black;
     margin-bottom: 17px;
+    margin-top: 17px;
 }
 section {
     border: 1px solid black;
@@ -40,3 +41,7 @@ section {
 .disclaimer {
     font-size: small;
 }
+@media (max-width: 1000px) {
+    div {
+        background: rgb(240, 240, 240);
+    }

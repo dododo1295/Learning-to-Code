@@ -1,0 +1,31 @@
+header {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #d18c8c;
+    border-radius: 10%;
+}
+header h1 {
+    font-size: 35px;
+    font-family: Lobster, cursive;
+    text-align: center;
+    font-weight: bold;
+
+}
+.header-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+    position: left;
+    border-radius: 50%;
+    align-items: left;
+}
+nav, ul {
+    list-style: none;
+    overflow: hidden;
+    color: #d8d8d8;
+}

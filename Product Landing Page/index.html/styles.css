@@ -1,3 +1,8 @@
+@media (max-width: 200px) {
+    body {
+        font-size: 1rem;
+    }
+}
 header {
     box-sizing: border-box;
     display: flex;

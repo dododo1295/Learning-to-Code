@@ -2,7 +2,6 @@ html {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     background: #f2f0e1;
-    overflow: hidden;
 }
 .navbar {
     display: flex;

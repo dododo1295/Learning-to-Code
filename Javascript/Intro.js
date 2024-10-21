@@ -35,10 +35,9 @@ console.log ();
     -- - decrement
 */
 // for example
-let num= 5
-let num2 = 10
-let sum = num + num2
-console.log(sum)
+let num = 5;
+let num2 = num++; //or
+let num2 = num + 1;s
 
 //or
 

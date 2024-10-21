@@ -1,7 +1,15 @@
+@media (max-width: 360em) {
+    .projects-section {
+      padding: 6rem 1rem;
+    }
+    .projects-grid {
+      grid-template-columns: 1fr;
+    }
 html {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     background: #f2f0e1;
+    scroll-behavior: smooth;
 }
 .navbar {
     display: flex;
@@ -28,7 +36,10 @@ html {
 .nav-list li {
     font-size: 20px;
     padding: 10px;
-
+}
+a {
+    text-decoration: none;
+}
 }
 h1 {
     font-family: Helvetica, sans-serif;
@@ -43,27 +54,42 @@ h2 {
 }
 p {
     font-size: 20px;
-    text-align: left;
     padding: 1%;
 
 }
 h3 h4 {
     font-family: Helvetica, sans-serif;
 }
-img {
-    width: 300px;
-    height: auto;
-    object-fit : cover;
+.projects-section:hover .code {
+    color: #8a8a8a;
+    transition: 3ms ease-in;
 }
-.projects-grid {
-    display: grid;
-    grid-template-columns: minmax(300px, 1fr), minmax(min-content, 94rem), minmax(2rem, 1fr);
-    gap: 20px;
-    padding: 20px;
-    margin: 20px;
+.project-tile{
+    width: 400px;
+    height: 400px; 
+    background-color: #db8a00;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #565656;
 }
-.project-tile {
+.project-tile img {
     width: 300px;
     height: 300px;
-    background-color: darkslategrey;
+    object-fit : cover;
+    margin-top: 25px;
+    border-radius: 2px;
+}
+.projects-grid {
+    width 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(320px, 2fr));
+    grid-gap: 1em;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.code {
+    color: var(blue);
+    transition: color 0.3s ease-out;
 }

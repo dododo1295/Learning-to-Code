@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "type": "firefox",
+            "name": "http://name=\"first-name\"",
+            "request": "launch",
+            "url": "http://name=\"first-name\""
+        }
+    ]
+}

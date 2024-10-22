@@ -1,0 +1,19 @@
+table, td, th{
+    border: 1px solid black;
+}
+
+/* rem and em measurements
+you see both but try to prefer rem.
+1em is the font-size of an element (or the element’s parent if you’re using it to set font-size).
+So, for example, if an element’s font-size is 16px, then setting its width to 4em would make its width 64px 
+(16 * 4 == 64).
+1rem is the font-size of the root element (either :root or html). 
+The math works the same with rem as it did with em, but without the added complexity of keeping track of 
+the parent’s font size. Relying on em could mean that a particular size could change if the context changes, 
+which is very likely not the behavior you want. */
+
+/* vw and vh measurements are relative to the viewport. 1vw is equal to 1% of the viewport width, and 1vh is
+equal to 1% of the viewport height. */
+
+/* CSS font import example
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');

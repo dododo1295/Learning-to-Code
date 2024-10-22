@@ -37,7 +37,7 @@ console.log ();
 // for example
 let num = 5;
 let num2 = num++; //or
-let num2 = num + 1;s
+num2 = num + 1;
 
 //or
 

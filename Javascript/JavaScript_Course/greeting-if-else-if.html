@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>time</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>this is a test ground for my JavaScript code stuff</h1>
+    <p>It's time for you're daily greeting!</p>
+    <button tooltip="click here for your timely greeting" onclick="
+        var now = new Date();
+        const hours = now.getHours();
+        
+        let response = '';
+        
+        if (hours < 24 && hours >=17) {
+            response = ('Good Night! Time For Bed.');
+        } else if (hours < 17 && hours >= 12) {
+            response = ('Good Afternoon!')
+        } else if (hours < 12 && hours >= 5) {
+            response = ('Good Morning');
+        } else if  (hours < 5 && hours >= 24) {
+            response = (`Go To Bed Young One, It's late`);
+        }
+        alert(response);
+    ">Hello!</button>
+    </div>
+</body>
+</html>

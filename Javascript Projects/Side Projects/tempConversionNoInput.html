@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Conversion</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Temperature Conversion</h1>
+    <script>
+        function tempConversion (temp, unit) {
+            if (unit === 'F') {
+                console.log((temp - 32) * 5/9);
+            } else if (unit === 'C') {
+                console.log((temp * 9/5) + 32);
+            } else {
+                console.log('Please enter a valid unit of measurement');
+            }
+        }
+        tempConversion(32, 'F');
+        tempConversion(28, 'C');
+    </script>
+</html>

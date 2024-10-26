@@ -20,16 +20,28 @@
     score.wins = 0;
     score.losses = 0;
     score.ties = 0;
+    localStorage.removeItem('score');
     ">Reset Score</button>
     <script>
-        const score = {
+
+    /* Sets score to previous score in storage */ 
+        let score = (JSON.parse(localStorage.getItem('score'))) || {
             wins: 0,
             losses: 0,
             ties: 0
         };
+    /* same thing as above
+        if (!score) {
+            score = {
+                wins: 0,
+                losses: 0,
+                ties: 0
+            };
+        }
+    */
 
         let computerMove = '';
-
+        /* sets the conditions of win loss or tie and puts it IN the function */
         function playGame(playerMove) {
             const computerMove = pickComputerMove();
             let result = ''
@@ -62,6 +74,7 @@
             } else if (computerMove === 'Scissors') {
                 result = ('You lose');
             }
+            /* Setting the Scoreboard */
             }
             if (result === 'You win') {
                 score.wins += 1;
@@ -71,6 +84,8 @@
             } else if (result === 'Tie') {
                 score.ties += 1;
             }
+            /*converting score function into a string*/
+            localStorage.setItem('score', JSON.stringify(score));
             alert(`You picked ${playerMove}. the computer picked ${computerMove}, ${result}
     Wins: ${score.wins} Losses: ${score.losses}, Ties: ${score.ties}.`
             );

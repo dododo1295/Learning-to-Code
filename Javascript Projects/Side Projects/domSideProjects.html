@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button class="button" onclick="console.log(document.querySelector('.button'));
+    ">Click Me</button>
+    <button class="change-me" onclick ="buttonChange();">Click Me Too</button>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <button class="heads" onclick="
+    document.querySelector('.click-choice')
+        .innerHTML = 'You chose: heads'">heads</button>
+    <button class="tails" onclick="
+    document.querySelector('.click-choice')
+        .innerHTML = 'You chose: tails'">tails</button>
+    <p class="click-choice"></p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <input class="name-input" placeholder="Your name here" onkeydown="
+    enterPress(event);">
+    <button class="name-submit" onclick="
+        nameOutput();
+    ">Submit</button>
+    <p class="name-output"></p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <input class="auto-in" onkeyup="autoOutput();">
+    <p class="auto-out"></p>
+    <script>
+        function enterPress (event) {
+            if (event.key === 'Enter') {
+                nameOutput();
+            }
+        }
+        function buttonChange () {
+            const buttonElement = document.querySelector('.change-me');
+            if (buttonElement.innerText === 'Click Me Too') {
+                buttonElement.innerText = 'I Change';
+            } else {
+                buttonElement.innerText = 'Click Me Too'
+            }
+        }
+        function nameOutput () {
+            const inputElement = document.querySelector('.name-input');
+            let output = inputElement.value;
+            document.querySelector('.name-output')
+                .innerHTML = `Hello ${output}!`;
+        }
+        function autoOutput () {
+            const inputElement2 = document.querySelector('.auto-in');
+            console.log(inputElement2);
+            document.querySelector('.auto-out')
+                .innerHTML = inputElement2.value;
+        }
+    </script>
+</body>
+</html>

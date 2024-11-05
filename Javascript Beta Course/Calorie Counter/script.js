@@ -116,3 +116,6 @@ function clearForm() {
 addEntryButton.addEventListener("click", addEntry);
 calorieCounter.addEventListener("submit", calculateCalories);
 clearButton.addEventListener("click", clearForm);
+
+
+// Testing this to see if it works.

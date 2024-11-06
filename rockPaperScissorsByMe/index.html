@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Rock Paper Scissors</title>
         <link rel="stylesheet" href="css/style.css" />
-        <script src="js/script.js"></script>
+        <script src="script.js"></script>
     </head>
     <body>
         <header>
@@ -24,5 +24,17 @@
                 <p><strong><em>However</em></strong> if the game results in a tie a coin flip will be played to see who recieves the point.</p>
             </details>
         </main> 
+        <section class="scoreboard">
+            <h3>Score</h3>
+            <p>Player: <span class="player-score">0</span></p>
+            <p>Computer: <span class="computer-score">0</span></p>
+            <p>Wins: <span class="wins">0</span></p>
+            <p>Losses: <span class="losses">0</span></p>
+
+        <section class="user-choice">
+            <button class="Rock" onclick="playGame("Rock");">Rock</button>
+            <button class="Paper" onclick="playGame("Paper");">Paper</button>
+            <button class="Scissors" onclick="playGame("Scissors");">Scissors</button>
+        </section>
     </body>
 </html>

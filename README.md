@@ -11,5 +11,6 @@ all projects are based on curriculum from https://freecodecamp.org or through ot
 
 ### Current Projects in here
 #### freeCodeCamp JavaScript Course
+Lots of googling for this course, way more difficult than I expected but I appreciate the hands off forcing to learn on my own as well as through the guides. exciting
 #### Building a Rock Paper Scissor game by myself
 This one is hard cause i'm trying to use code as reference without directly copying and figuring out issues myself. this is actually really fun.

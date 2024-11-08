@@ -4,19 +4,23 @@ const playerScoreElement = document.querySelector('.player-score');
 const computerScoreElement = document.querySelector('.computer-score');
 let userScore = 0;
 let computerScore = 0;
+let userScore = 0;
+let computerScore = 0;
 
 function computerMoveResult() {
   const option = ["rock", "paper", "scissors"];
   const randomNumber = Math.floor(Math.random() * option.length);
   return option[randomNumber];
 };
-function whoWon(player,computer) {
+function whoWon(player, computer) {
   return (
 (player === "Rock" && computer === "Scissors") ||
 (player === "Scissors" && computer === "Paper") ||
 (player === "Paper" && computer === "Rock")
   );
-};
+  if (player === computer) {
+    coinFlip();
+}
 
 let userScore = 0;
 let computerScore = 0;
@@ -32,11 +36,6 @@ function coinFlip() {
     computerScore++
     computerScoreElement.innerHTML = computerScore;
   };
-};
-function tieResult() { 
-  if (gameResult === "tie") {
-    coinFlip();
-  }
 };
 
 playGame() {

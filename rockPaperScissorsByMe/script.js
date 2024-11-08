@@ -14,9 +14,9 @@ function computerMoveResult() {
 };
 function whoWon(player, computer) {
   return (
-(player === "Rock" && computer === "Scissors") ||
-(player === "Scissors" && computer === "Paper") ||
-(player === "Paper" && computer === "Rock")
+(player === "Rock" && computerMoveResult() === "Scissors") ||
+(player === "Scissors" && computerMoveResult() === "Paper") ||
+(player === "Paper" && computerMoveResult() === "Rock")
   );
   if (player === computer) {
     coinFlip();

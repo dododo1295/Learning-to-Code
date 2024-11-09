@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Rock Paper Scissors</title>
+        <link rel="stylesheet" href="./style.css" />
+        <script src="./script.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Rock Paper Scissors</h1>
+            <h2>with a twist</h2>
+        </header>
+        <main>
+            <details class="rules">
+                <summary>How to play</summary>
+                <li>
+                    <p>This game mostly operates like the standard Rock Paper Scissors game we all know:</p>
+                    <li>Rock beats Scissors</li>
+                    <li>Scissors beats Paper</li>
+                    <li>Paper beats Rock</li>                    
+                </li>
+                <p><strong><em>However</em></strong> if the game results in a tie a coin flip will be played to see who recieves the point.</p>
+            </details>
+        </main> 
+        <section class="scoreboard">
+            <h3>Score</h3>
+            <p>Player: <span class="player-score">0</span></p>
+            <p>Computer: <span class="computer-score">0</span></p>
+            <p>Wins: <span class="wins">0</span></p>
+            <p>Losses: <span class="losses">0</span></p>
+        </section>
+        <section class="user-choice">
+            <button class="Rock" onclick="playGame("Rock");">Rock</button>
+            <button class="Paper" onclick="playGame("Paper");">Paper</button>
+            <button class="Scissors" onclick="playGame("Scissors");">Scissors</button>
+        </section>
+    </body>
+</html>

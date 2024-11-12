@@ -1,1 +1,6 @@
 .vscode/settings.json
+deno.json
+main_test.ts
+main.ts
+deno.lock
+

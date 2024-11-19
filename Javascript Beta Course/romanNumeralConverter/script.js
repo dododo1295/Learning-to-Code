@@ -35,7 +35,7 @@ convert.addEventListener("click", () => {
     let result = "";
 
     for (const [roman, number] of numeral) {
-      while (number < input.value) {
+      while (number <= input.value) {
         result += roman;
         value -= number;
       }

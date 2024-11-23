@@ -13,13 +13,18 @@
   <p>It's time for you're daily greeting!</p>
   <h2>is this working</h2>
   <button id="btn">Click Me!</button>
+  <button id="reset">Reset</button>
   <script>
     const letsGo = 88;
     const testPablo = document.getElementById("pablo")
     const btnPress = document.getElementById("btn");
+    const reset = document.getElementById("reset");
 
     btnPress.addEventListener("click", () => {
       testPablo.innerText = `Hello look at this number ${letsGo}`;
+    });
+    reset.addEventListener("click", () => {
+      testPablo.innerText = "this is a test ground for my Javascript code stuff"
     })
 
   </script>

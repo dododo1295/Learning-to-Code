@@ -1,0 +1,36 @@
+<!--This project is from freeCodeCamp Youtube channel to learn a little bit more about math in JS. -->
+<!doctype html>
+<html>
+    <head>
+        <title>Polyrhythm</title>
+    </head>
+    <body>
+        <canvas id="theCanvas" style="background-color: black"></canvas>
+        <script src="track.js"></script>
+        <script src="ball.js"></script>
+        <script>
+            const size = 700;
+            theCanvas.width = size;
+            theCanvas.height = size;
+
+            const trackCenter = { x: size / 2, y: size / 2 };
+            const trackRadius = 100;
+            const ballRadius = 10;
+            const ballSpeed = 0.1;
+
+            const ctx = theCanvas.getContext("2d");
+            const track = new Track(trackCenter, trackRadius);
+            const ball = new Ball(track, ballRadius, ballSpeed);
+
+            animate();
+
+            function animate() {
+                ctx.clearRect(0, 0, size, size);
+                track.draw(ctx);
+                ball.move();
+                ball.draw(ctx);
+                requestAnimationFrame(animate);
+            }
+        </script>
+    </body>
+</html>

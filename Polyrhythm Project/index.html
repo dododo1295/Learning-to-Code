@@ -35,12 +35,14 @@
                 const trackRadius = trackMinRadius + i * trackStep;
                 const ballSpeed = ballMinSpeed + i * ballSpeedStep;
                 const ballSoundFreq = soundFreq[i];
-                const track = new Track(trackCenter, trackRadius);
+                const hue = (i * 360) / N;
+                const track = new Track(trackCenter, trackRadius, hue);
                 const ball = new Ball(
                     track,
                     ballRadius,
                     ballSpeed,
                     ballSoundFreq,
+                    hue,
                 );
                 tracks.push(track);
                 balls.push(ball);

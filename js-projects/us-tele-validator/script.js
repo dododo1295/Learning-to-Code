@@ -8,17 +8,19 @@ check.addEventListener("click", () => {
   const inputArr = input.split("");
   let formattedNumber = "";
 
-  // alert if no input
-  if (inputArr.length === 0) {
-    alert("Please provide a phone number");
-    return;
-  }
   // goes through array backwards finds non-numbers and removes them
   for (let i = inputArr.length - 1; i >= 0; i--) {
     if (isNaN(inputArr[i])) {
       inputArr.splice(i, 1);
       continue;
     }
+  }
+  // alert if no input
+  if (inputArr.length === 0) {
+    alert("Please provide a phone number");
+    inputValue.value = "";
+    results.innerText = "";
+    return;
   }
   // throws error if the number is too long or too short
   if (inputArr.length > 11 || (inputArr.length > 10 && inputArr[0] !== "1")) {

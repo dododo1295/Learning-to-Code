@@ -6,6 +6,7 @@ const results = document.getElementById("results-div");
 check.addEventListener("click", () => {
   const input = inputValue.value;
   const inputArr = input.split("");
+  let formattedNumber = "";
 
   // alert if no input
   if (inputArr.length === 0) {
@@ -20,21 +21,32 @@ check.addEventListener("click", () => {
     }
   }
   // throws error if the number is too long or too short
-  if (inputArr.length > 11) {
+  if (inputArr.length > 11 || (inputArr.length > 10 && inputArr[0] !== "1")) {
     alert("This is not a valid US number");
     inputValue.value = "";
+    results.innerText = "";
     return;
-  } else if (inputArr.length < 7) {
+  } else if (inputArr.length < 10) {
     alert("This is not a valid US number");
     inputValue.value = "";
+    results.innerText = "";
     return;
   }
 
-  results.innerText = `Valid US number: ${inputArr.join("")}`;
+  if (inputArr.length === 10) {
+    // Format as 555-555-5555
+    formattedNumber = `(${inputArr.slice(0, 3).join("")})${inputArr.slice(3, 6).join("")}-${inputArr.slice(6, 10).join("")}`;
+  } else if (inputArr.length === 11) {
+    // Format as 1 (555) 555-5555
+    formattedNumber = `${inputArr[0]} (${inputArr.slice(1, 4).join("")}) ${inputArr.slice(4, 7).join("")}-${inputArr.slice(7, 11).join("")}`;
+  }
+
+  if (formattedNumber) {
+    results.innerText = `Valid US number: ${formattedNumber}`;
+  }
 });
 
 clear.addEventListener("click", () => {
   results.innerText = "";
   inputValue.value = "";
 });
-// still need to convert to string or structure the output into a valid phone number format.

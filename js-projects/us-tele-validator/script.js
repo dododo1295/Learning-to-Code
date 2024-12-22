@@ -35,6 +35,7 @@ check.addEventListener("click", () => {
     return;
   }
 
+  // formats the numbers based on length
   if (inputArr.length === 10) {
     // Format as 555-555-5555
     formattedNumber = `(${inputArr.slice(0, 3).join("")})${inputArr.slice(3, 6).join("")}-${inputArr.slice(6, 10).join("")}`;

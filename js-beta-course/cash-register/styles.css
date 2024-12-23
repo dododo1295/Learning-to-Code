@@ -1,0 +1,16 @@
+html {
+    background-color: #464d5c;
+    display: flex;
+    align-items: center;
+}
+div {
+    display: flex;
+    align-items: center;
+}
+#purchase-btn {
+    margin: 10px;
+    background-color: #693690;
+    color: white;
+    border: none;
+    border-radius: 10%;
+}
